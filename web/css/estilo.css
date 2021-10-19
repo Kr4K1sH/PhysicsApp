@@ -1,0 +1,159 @@
+#contenido {
+	width: 400px;
+	text-align: center;
+	height: 560px;
+	background-color: #161616;
+	margin-top:10px;
+	margin:0 auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        border-color: red;
+        box-shadow: 2px 2px 2.5px red;
+        color: white;
+        
+}
+
+#registro {
+	padding-top: 50px;
+	text-align: center;
+	background-color: white;
+	margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 80px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        border-color: red;
+        box-shadow: 2px 2px 2.5px red;
+        color: white;
+        min-width: 1000px;
+        
+}
+
+#principal, #registrar{
+	padding-top: 20px;
+	text-align: center;
+	background-color: rgba(47, 83, 108,0.9);
+	margin-left: 6%;
+        margin-right: 6%;
+        margin-bottom: 30px;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        border-color: #3E95B2;
+        box-shadow: 4px 4px 5px graytext;
+        color: #C1F0FF;
+        min-width: 1000px;
+        
+}
+
+body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.mant{
+        background: url('IMG/icon/mant.png') no-repeat;
+    height:64px;
+    width:64px;
+}
+
+#tablaRegistro{
+    width: 800px;
+    margin: 100px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+#contenido #imgLogin{
+    margin-top: 30px;
+    margin-left: -30px;
+    opacity: 10;
+    width: 350px;
+    height: 150px;
+    
+}
+
+
+    .p-grid {
+        text-align: center;
+    }
+ 
+    .p-grid i {
+        vertical-align: middle;
+        padding-right: 5px;
+        font-size: 2em;
+    }
+     
+    .p-grid .icon-container:hover {
+        background-color: #EFF3F6;
+        cursor: pointer;
+    }
+     
+    .dark-content .p-grid .icon-container:hover {
+        background-color: #5e6061;
+    }
+     
+    .iconInfo {
+        background-color: #30383c;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        height: 130px;
+        width: 260px;
+        color: #ffffff;
+        padding: 0 10px;
+        display: none;
+        webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        z-index: 999999;
+    }
+     
+    .iconInfo .iconInfo-header {
+        position: relative;
+        border-bottom: 1px solid #e3e9ea;
+        padding: 5px;
+    }
+     
+    .iconInfo .iconInfo-close {
+        position: absolute;
+        right: 5px;
+        color: #ffffff;
+    }
+     
+    .iconInfo .icon-text {
+        padding-top: 5px;
+        padding-bottom: 2px;
+        font-size: 13px;
+    }
+     
+    .iconInfo .icon-sample-input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 5px;
+    }
+     
+    .iconInfo .icon-sample-input + i {
+        text-align: center;
+        display: block;
+        font-size: 30px;
+    }
+     
+    .iconInfo .copied-text {
+        display: none;
+        position: absolute;
+        right: 30px;
+        top: 7px;
+        color: #1b82d7;
+        font-weight: bold;
+    }
+    
+
