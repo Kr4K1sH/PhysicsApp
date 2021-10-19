@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Registro Persona</title>
+        <meta charset="utf-8"></meta>
+
+     
+
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet"></link>
+        <link rel="stylesheet" href="css/animate.css"></link>
+        <link rel="stylesheet" href="css/icomoon.css"></link>
+        <link rel="stylesheet" href="css/bootstrap.css"></link>
+        <link rel="stylesheet" href="css/magnific-popup.css"></link>
+        <link rel="stylesheet" href="css/owl.carousel.min.css"></link>
+        <link rel="stylesheet" href="css/owl.theme.default.min.css"></link>
+        <link rel="stylesheet" href="css/style.css"></link>
+
+
+        <script src="js/modernizr-2.6.2.min.js"></script>
+
+
+    </h:head>
+    <h:body>
+   
+        <h:form>  
+        <div id="page">
+            <nav class="fh5co-nav" role="navigation">
+                <div class="top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 text-right">
+                                <p class="num">Teléfono: +506 2442 8888</p>
+                                <ul class="fh5co-social">
+                                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                                    <li><a href="#"><i class="icon-github"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img src="images/logo.jpg" alt="" height="100" width="250"></img>   
+                            </div>
+
+                            <div class="col-xs-10 text-right menu-1">
+                                <div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li class="active"><a href="indexAdmin.xhtml">Volver</a></li>
+							
+						</ul>
+					</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+	  
+            
+                <div class="container">
+     
+                    <div class="row">
+                        <div class="pricing">
+                                  
+                            <div class="col-md-12 animate-box">
+                                <div class="price-box">
+                                       
+                                    <h2 class="pricing-plan">Registro</h2> 
+      
+                                    <ul class="classes">
+                                        
+
+                                        <li>  
+
+                                            <label for="full_name_id" class="control-label">Identificacion</label>
+                                            <h:inputText class="form-control" value="#{beanRegistroPersona.idPersona}"   ></h:inputText>
+                                        </li>
+                                        <li>  <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Nombre</label>
+                                            <h:inputText class="form-control" value="#{beanRegistroPersona.nombre}"   ></h:inputText>
+                                        </li>
+                                        <li> 
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Primer Apellido</label>
+                                            <h:inputText class="form-control" value="#{beanRegistroPersona.apellido1}"   ></h:inputText>
+                                        </li>
+                                        <li> 
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Segundo Apellido</label>
+                                            <h:inputText class="form-control" value="#{beanRegistroPersona.apellido2}"   ></h:inputText>
+                                        </li>
+                                        <li> 
+
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Contrasena</label>
+                                            <h:inputSecret class="form-control"  value="#{beanRegistroPersona.contrasenna}"> </h:inputSecret>
+                                            
+                                           
+
+                                        </li>
+                                        <li> 
+
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Comprobar Contrasena</label>
+                                            <h:inputSecret class="form-control"  value="#{beanRegistroPersona.contrasenna2}"> </h:inputSecret>
+                                           
+
+                                        </li>
+                                        <li> 
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Fecha de nacimiento</label>
+                                            <br></br>
+                                            <label for="full_name_id" style="color:green;" class="control-label" >La fecha debe ser Dia/Mes/Anio</label>
+                                            
+                                            <h:inputText  class="form-control" value="#{beanRegistroPersona.fechaNacimiento}">
+                                                <f:convertDateTime pattern="dd/MM/yyyy"></f:convertDateTime>
+                                            </h:inputText>                                       
+                                        
+                                        </li>
+                                        <li> 
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Edad</label>
+                                            <h:inputText class="form-control"  value="#{beanRegistroPersona.edad}"  ></h:inputText>
+                                        </li>
+                                        <li> 
+
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Correo</label>
+                                            <h:inputText class="form-control"  value="#{beanRegistroPersona.correo}"  ></h:inputText>
+                                        </li>
+                                        <li> 
+
+
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Provincia</label>
+                                            <h:selectOneMenu   class="form-control" value="#{beanRegistroPersona.ID_Provincia}"  >
+                                                <f:selectItems  value="#{beanRegistroPersona.comboProvincia}"  > </f:selectItems>
+                                                <f:ajax event="change" listener="#{beanRegistroPersona.CargarCanton}" render="codCan" execute="@this"></f:ajax>
+                                            </h:selectOneMenu>
+                                        </li>
+                                        <li>                           
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Canton</label>
+                                            <h:selectOneMenu  id="codCan" class="form-control" value="#{beanRegistroPersona.ID_Canton}"  >
+                                                <f:selectItems  value="#{beanRegistroPersona.comboCanton}"  > </f:selectItems>
+                                                <f:ajax event="change" listener="#{beanRegistroPersona.CargarDistrito}" render="codDis" execute="@this"></f:ajax>
+
+                                            </h:selectOneMenu>
+                                        </li>
+                                        <li>
+
+                                            <!-- Full Name -->
+                                            <label for="full_name_id" class="control-label" >Distrito</label>
+                                            <h:selectOneMenu id="codDis" class="form-control" value="#{beanRegistroPersona.ID_Distrito}"  >
+                                                <f:selectItems value="#{beanRegistroPersona.comboDistrito}"  > </f:selectItems>
+
+                                            </h:selectOneMenu>
+                                        </li>
+                                        
+                                    </ul>
+                                       
+                                    <h:commandButton value="Registrarse" class="btn btn-success" action="#{beanRegistroPersona.insertarPersonaAdmin() }"></h:commandButton>
+                 
+
+
+                                </div>   </div>  <h:outputLabel style="color: red;" value="#{beanRegistroPersona.mensaje}"> </h:outputLabel>
+                                      </div>   </div>   </div>                
+
+
+
+        <footer id="fh5co-footer" class="fh5co-bg" style="background-image: url(images/img_bg_1.jpg);" role="contentinfo">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row row-pb-md">
+                    <div class="col-md-4 fh5co-widget">
+                        <h3>Un poco acerca de Stamina</h3>
+                        <p>Eres tu el que quiere marcar la diferencia dime porque luchas?, te digo va a tomar esfuerzo, pero si empujas y sigues empujando aunque estes cansado y empujes una ves mas y vas a derribar cualquier obstaculo repeticion tras repeticion te acercaras a tu vision </p>
+                        <p><a class="btn btn-primary" href="registroPersonasAdmin.xhtml">Hazte Miembro</a></p>
+                    </div>
+                    <div class="col-md-8">
+                        <h3>Classes</h3>
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="#">Cardio</a></li>
+                                <li><a href="#">Body Building</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Boxing</a></li>
+                                <li><a href="#">Running</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="#">Boxing</a></li>
+                                <li><a href="#">Martial Arts</a></li>
+                                <li><a href="#">Karate</a></li>
+                                <li><a href="#">Kungfu</a></li>
+                                <li><a href="#">Basketball</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4 col-sm-4 col-xs-6">
+                            <ul class="fh5co-footer-links">
+                                <li><a href="#">Badminton</a></li>
+                                <li><a href="#">Body Building</a></li>
+                                <li><a href="#">Teams</a></li>
+                                <li><a href="#">Advertise</a></li>
+                                <li><a href="#">API</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+                        </p>
+
+                        <ul class="fh5co-social-icons">
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+
+
+        <!-- jQuery -->
+        <script src="js/jquery.min.js"></script>
+        <!-- jQuery Easing -->
+        <script src="js/jquery.easing.1.3.js"></script>
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Waypoints -->
+        <script src="js/jquery.waypoints.min.js"></script>
+        <!-- Stellar Parallax -->
+        <script src="js/jquery.stellar.min.js"></script>
+        <!-- Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- countTo -->
+        <script src="js/jquery.countTo.js"></script>
+        <!-- Magnific Popup -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <!-- Main -->
+        <script src="js/main.js"></script>
+    </h:form>
+    </h:body>
+</html>

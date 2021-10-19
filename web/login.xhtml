@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <title>Inicio</title>
+        <link href="https://Resources/fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet"></link>
+
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="Resources/css/bootstrap.min.css"></link>
+        <link href="Resources/css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="Resources/css/main.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body style="background-image:url(images/fondo1.jpg); background-repeat: no-repeat; background-color: whitesmoke; background-size: cover;">
+
+        <div id="contenido" >
+            <h:form>
+                <img src="images/logo.jpg" id="imgLogin"></img>
+                <h3 style="color:white;">Identificacion</h3>
+                <h:inputText value="#{beanLogin.idPersona}"></h:inputText>
+                <br></br>
+                <h3 style="color:white;">Contraseña</h3>
+                <h:inputSecret value="#{beanLogin.contrasenna}"></h:inputSecret>
+                <br></br>
+                <h:selectOneMenu value="#{beanLogin.tipoAcceso}" style="background-color: black">
+                    <f:selectItem itemValue="Administrador"></f:selectItem>
+                    <f:selectItem itemValue="Deportista"></f:selectItem>
+                </h:selectOneMenu>
+
+
+                <br></br>
+                <h:commandButton actionListener="#{beanLogin.validarCred()}" value="Ingresar"></h:commandButton>
+                <h3><a href="#{request.contextPath}/faces/registroPersona.xhtml">Registrarse</a></h3>
+                <h3><a href="#{request.contextPath}/faces/index.xhtml">Regresar a Inicio</a></h3>
+
+                <h:outputLabel value="#{beanLogin.mensajeAviso}" style="color: #91210B"></h:outputLabel>
+
+                <h:outputLabel value="#{beanLogin.mensajeError}"  style="color: #91210B"></h:outputLabel>
+
+
+
+            </h:form>
+        </div>
+        <br />
+    </h:body>
+    <script src="Resources/js/jquery.min.js"></script>
+    <script src="Resources/js/bootstrap.min.js"></script>
+    <script src="Resources/js/slick.min.js"></script>
+    <script src="Resources/js/nouislider.min.js"></script>
+    <script src="Resources/js/jquery.zoom.min.js"></script>
+    <script src="Resources/js/main.js"></script>
+
+</html>
